@@ -1,0 +1,21 @@
+@use "variables";
+@use "mixinFlex";
+
+.header {
+  color: variables.$colorBlack;
+  background-color: variables.$colorWhite;
+  padding: variables.$padding;
+
+  &-nav {
+    font-size: variables.$fontLogo;
+    font-family: variables.$font-familyLogo;
+    @include mixinFlex.flex(center, space-around, row);
+    color: variables.$colorPurple;
+    i {
+      width: 6%;
+      height: 6%;
+      color: variables.$colorPurple;
+      cursor: pointer;
+    }
+  }
+}

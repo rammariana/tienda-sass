@@ -1,0 +1,65 @@
+@use "variables";
+@use "mixinFlex";
+@use "mixinScaled";
+
+.content-carrusel {
+  height: 200px;
+  overflow: hidden;
+  margin: variables.$fontTitle 0;
+}
+
+.carrusel {
+  width: variables.$width;
+  height: variables.$height;
+  position: relative;
+
+  &-card {
+    height: variables.$height;
+  }
+  &-flechas {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    @include mixinFlex.flex(center, space-between, row);
+    padding: variables.$padding;
+    color: variables.$colorWhite;
+  }
+  img {
+    width: variables.$width;
+    height: variables.$height;
+    border-bottom-left-radius: variables.$padding;
+    border-bottom-right-radius: 0.1rem;
+
+    border-top-right-radius: variables.$padding;
+    border-top-left-radius: 0.1rem;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: variables.$colorWhite;
+  font-style: none;
+  cursor: pointer;
+}
+
+.descripcion {
+  background-color: rgba(255, 255, 255, 0.13);
+  width: variables.$width;
+  height: 20%;
+  position: absolute;
+  bottom: 0;
+
+  @include mixinFlex.flex(center, center);
+  p {
+    @include mixinScaled.scaled;
+    color: variables.$colorWhite;
+    animation: scaled 2s ease-in infinite;
+    transition: animation 1s ease;
+  }
+}
+@media (min-width: 650px) {
+  .content-carrusel {
+    height: 300px;
+  }
+}

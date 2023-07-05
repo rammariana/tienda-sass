@@ -1,0 +1,49 @@
+@use "variables";
+@use "mixinFlex";
+.body {
+  @include mixinFlex.flex(center, center, column);
+}
+.products {
+  width: 95%;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  gap: variables.$padding;
+  text-align: center;
+  padding: variables.$padding;
+
+  &-card {
+    position: relative;
+    width: variables.$width;
+    height: variables.$height;
+    border-radius: variables.$padding;
+    overflow: hidden;
+    img {
+      border-radius: variables.$padding;
+      width: 100%;
+      box-shadow: variables.$boxShadow;
+      transition: scale 1s ease;
+    }
+    button {
+      width: 45%;
+      position: absolute;
+      bottom: 15%;
+      left: 31%;
+      color: variables.$colorWhite;
+      background-color: transparent;
+      border: 1px solid variables.$colorWhite;
+      border-radius: variables.$borderRadius;
+      padding: variables.$borderRadius;
+    }
+  }
+}
+
+.products-card img:hover {
+  scale: 1.1;
+}
+.products-card button:hover {
+  background-color: variables.$colorWhite;
+  opacity: 0.5;
+  color: variables.$colorOscuro;
+  cursor: pointer;
+}

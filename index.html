@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gayathri:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap"
+      rel="stylesheet"
+    />
+    <!--fonts
+-->
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/8e1914dd5f.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Curso Sass</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header-nav">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <h1 class="header-logo">IDtly</h1>
+        <i class="fa-solid fa-bag-shopping"></i>
+      </nav>
+    </header>
+
+    <section class="body">
+      <article class="destacada">
+        <img src="assets/header.jpg" alt="" class="body-destacada" />
+        <p class="destacada-title">Tecno & <br />Style</p>
+      </article>
+
+      <section class="texto">
+        <div class="icons">
+          <div class="texto-icon">
+            <i class="fa-solid fa-money-check"></i>
+            <p>Compra 100% segura</p>
+          </div>
+          <div class="texto-icon">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            <p>Pagas cuando llegue a casa</p>
+          </div>
+          <div class="texto-icon">
+            <i class="fa-solid fa-truck"></i>
+            <p>Envío gratis</p>
+          </div>
+        </div>
+        <h2>Tecno & Style</h2>
+        <p class="parrafo">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore fugiat
+          enim reiciendis voluptas. Esse nobis saepe ipsum. Dolore maiores
+          excepturi, aliquid vero, aperiam repellat fuga quibusdam nesciunt
+          harum delectus veniam eos distinctio animi ab tenetur recusandae
+          similique corrupti deleniti consequatur?
+        </p>
+      </section>
+
+      <article class="products">
+        <div class="products-card">
+          <img src="assets/1.jpg" />
+          <button>Comprar</button>
+        </div>
+        <div class="products-card">
+          <img src="assets/2.jpg" alt="" />
+          <button>Comprar</button>
+        </div>
+        <div class="products-card">
+          <img src="assets/3.jpg" alt="" />
+          <button>Comprar</button>
+        </div>
+        <div class="products-card">
+          <img src="assets/4.jpg" alt="" />
+          <button>Comprar</button>
+        </div>
+      </article>
+
+      <article class="content-carrusel">
+        <div class="carrusel" id="carrusel-1">
+          <div class="carrusel-card" id="card-1">
+            <img src="assets/c-1.jpg" alt="" />
+          </div>
+          <div class="carrusel-flechas">
+            <a href="#carrusel-4">
+              <i class="fa-solid fa-caret-left"></i>
+            </a>
+            <a href="#carrusel-2">
+              <i class="fa-solid fa-caret-right"></i>
+            </a>
+          </div>
+          <section class="descripcion"><p>30% Descuento</p></section>
+        </div>
+
+        <div class="carrusel" id="carrusel-2">
+          <div class="carrusel-card" id="card-2">
+            <img src="assets/c-2.jpg" alt="" />
+          </div>
+          <div class="carrusel-flechas">
+            <a href="#carrusel-1">
+              <i class="fa-solid fa-caret-left"></i>
+            </a>
+            <a href="#carrusel-3">
+              <i class="fa-solid fa-caret-right"></i>
+            </a>
+          </div>
+          <section class="descripcion"><p>50% Descuento</p></section>
+        </div>
+
+        <div class="carrusel" id="carrusel-3">
+          <div class="carrusel-card" id="card-3">
+            <img src="assets/c-3.jpg" alt="" />
+          </div>
+          <div class="carrusel-flechas">
+            <a href="#carrusel-2">
+              <i class="fa-solid fa-caret-left"></i>
+            </a>
+            <a href="#carrusel-4">
+              <i class="fa-solid fa-caret-right"></i>
+            </a>
+          </div>
+          <section class="descripcion"><p>Gafas Modernas</p></section>
+        </div>
+
+        <div class="carrusel" id="carrusel-4">
+          <div class="carrusel-card" id="card-4">
+            <img src="assets/c-4.jpg" alt="" />
+          </div>
+          <div class="carrusel-flechas">
+            <a href="#carrusel-3">
+              <i class="fa-solid fa-caret-left"></i>
+            </a>
+            <a href="#carrusel-1">
+              <i class="fa-solid fa-caret-right"></i>
+            </a>
+          </div>
+          <section class="descripcion"><p>10% Descuento</p></section>
+        </div>
+      </article>
+
+      <article class="medios-de-pago">
+        <h3>Nuestros medios de pago</h3>
+        <i class="fa-brands fa-cc-mastercard"></i>
+        <i class="fa-brands fa-cc-visa"></i>
+        <i class="fa-brands fa-cc-paypal"></i>
+      </article>
+
+      <article class="contacto">
+        <h3>Visítanos en nustras redes sociales</h3>
+        <div class="contacto-redes">
+          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </article>
+
+      <article class="boletin">
+        <p>
+          Inscríbete a nuestro boletín y descubre de los productos más
+          exclusivos
+        </p>
+        <input type="email" name="email" id="email" />
+        <button type="submit">Avísame</button>
+      </article>
+    </section>
+    <footer>© IDtly fue diseñado por Mariana Ramírez</footer>
+  </body>
+</html>

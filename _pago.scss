@@ -1,0 +1,25 @@
+@use "variables";
+@use "mixinFlex";
+@use "mixinScaled";
+
+.medios-de-pago {
+  width: variables.$width;
+  text-align: center;
+  padding: variables.$padding;
+  color: variables.$colorPurple;
+  h3 {
+    padding: variables.$padding;
+  }
+  i {
+    font-size: variables.$fontTitle;
+    color: variables.$colorPurple;
+    padding: variables.$padding;
+    padding-left: variables.$padding;
+  }
+}
+
+@media (min-width: 600px) {
+  .medios-de-pago {
+    padding: 2rem;
+  }
+}

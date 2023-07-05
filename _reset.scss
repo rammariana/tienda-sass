@@ -1,0 +1,17 @@
+@use "variables";
+html,
+body,
+ul,
+li,
+::after,
+::before,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: variables.$width;
+  height: variables.$height;
+  font-family: variables.$fontFamilyGeneral;
+}

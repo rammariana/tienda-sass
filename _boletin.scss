@@ -1,0 +1,47 @@
+@use "variables";
+@use "mixinFlex";
+@use "mixinScaled";
+
+.boletin {
+  width: variables.$width;
+  background: linear-gradient(
+    variables.$colorWhite,
+    rgb(78, 220, 255),
+    rgb(151, 44, 252)
+  );
+  padding: 2rem;
+  @include mixinFlex.flex(center, center);
+
+  p {
+    text-align: center;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    color: rgba(0, 0, 0, 0.747);
+    font-weight: bold;
+  }
+  input {
+    @extend p;
+    border: thin solid variables.$colorWhite;
+    border-radius: variables.$padding;
+    outline: none;
+    width: 80%;
+  }
+  button {
+    @include mixinScaled.scaled;
+    width: 5rem;
+    height: 2rem;
+    border-radius: variables.$padding;
+    border: none;
+    background-color: variables.$colorWhite;
+    transition: animation 1s;
+    animation: scaled 3s ease 4;
+    cursor: pointer;
+    color: variables.$colorPurple;
+  }
+}
+
+@media (min-width: 650px) {
+  .boletin input {
+    width: 50%;
+  }
+}

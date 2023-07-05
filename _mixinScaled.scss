@@ -1,0 +1,10 @@
+@mixin scaled {
+  @keyframes scaled {
+    0% {
+      scale: 1;
+    }
+    100% {
+      scale: 1.1;
+    }
+  }
+}
